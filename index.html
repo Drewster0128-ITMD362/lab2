@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
-<head>
-  <title>Lab 2</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" />
-</head>
-<body>
-
-</body>
+  <head>
+    <title>Lab 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css">
+    <link rel="stylesheet" media="screen" href="css/screen.css">
+  </head>
+  <body>
+    <h1>ITMD 362 Lab 2 Form</h1>
+    <main>
+      <form>
+        <ul class="form_list">
+          <li class="form_list form_list-item">
+            <label class="form_list-item form_list-item-label" id="email_label" for="email_input">Email Address:</label>
+            <input class="form_list-item form_list-item-input" id="email_input" type="email" size="30">
+          </li>
+          <li class="form_list form_list-item">
+            <label class="form_list-item form_list-item-label" id="phone_number_label">Phone Number:</label>
+            <ul class="form_list-item form_list-item-sublist" id="phone_number_input_list">
+              <li class="form_list-item-sublist form_list-item-sublist-item">
+                <input id="area_code" type="tel" pattern="[0-9]{3}">
+              </li>
+              <li class="form_list-item-sublist form_list-item-sublist-gap"> - </li>
+              <li class="form_list-item-sublist form_list-item-sublist-item">
+                <input id="telephone_prefix" type="tel" pattern="[0-9]{3}">
+              </li>
+              <li class="form_list-item-sublist form_list-item-sublist-gap"> - </li>
+              <li class="form_list-item-sublist form_list-item-sublist-item">
+                <input id="line_number" type="tel" pattern="[0-9]{4}"> 
+              </li>
+            </ul>
+          </li>
+          <li class="form_list form_list-item">
+            <label class="form_list-item form_list-item-label" id="dob_label" for="dob_input">Date of Birth:</label>
+            <input class="form_list-item form_list-item-input" id="dob_input" type="date" min="1900-01-01">
+          </li>
+        </ul>
+        <li class="form_list form_list-item">
+          <input class="form_list-item form_list-item-input" type="submit" value="Submit"></input>
+        </li>
+      </form>
+    </main>
+  </body>
 </html>
